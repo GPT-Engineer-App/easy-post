@@ -5,10 +5,10 @@ const Post = () => {
   const post = { id, title: `Blog Post ${id}`, content: `This is the content of blog post ${id}.` };
 
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center">
+    <div className="h-screen w-screen flex flex-col items-center justify-center bg-black text-green-500 font-mono">
       <h1 className="text-3xl mb-4">{post.title}</h1>
       <p className="mb-4">{post.content}</p>
-      <Link to="/posts" className="text-blue-500">Back to Posts</Link>
+      <Link to="/posts" className="text-green-500">Back to Posts</Link>
     </div>
   );
 };

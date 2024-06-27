@@ -7,18 +7,18 @@ const Posts = () => {
   ];
 
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center">
+    <div className="h-screen w-screen flex flex-col items-center justify-center bg-black text-green-500 font-mono">
       <h1 className="text-3xl mb-4">Blog Posts</h1>
       <ul>
         {posts.map((post) => (
           <li key={post.id} className="mb-2">
-            <Link to={`/posts/${post.id}`} className="text-blue-500">
+            <Link to={`/posts/${post.id}`} className="text-green-500">
               {post.title}
             </Link>
           </li>
         ))}
       </ul>
-      <Link to="/" className="text-blue-500 mt-4">Back to Home</Link>
+      <Link to="/" className="text-green-500 mt-4">Back to Home</Link>
     </div>
   );
 };
